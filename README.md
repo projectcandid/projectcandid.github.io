@@ -1,2 +1,2 @@
-# gizmux.github.io
+# projectcandid.github.io
 github page 
