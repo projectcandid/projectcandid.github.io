@@ -1,4 +1,5 @@
-<html><head>
+<html>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -7,37 +8,46 @@
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
     <link rel="stylesheet" type="text/css" href="css/cover.css">
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-  </head><body>
-    <div class="cover">
-      <div class="navbar">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#Candid">Candid</a>
-              </li>
-              <li>
-                <a href="#Candid_Girlfriends">Candid Girlfriends</a>
-              </li>
-              <li>
-                <a href="#About_US">About Us</a>
-              </li>
-              <li>
-                <a href="#Contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+  </head>
+  <body>
+
+    <nav id="menu" class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" id="brand" data-page="home">Home</a>
         </div>
+        <!-- Nav tabs -->
+          <ul class="nav navbar-nav navbar-right">
+            <li data-page="performances.html"><a href="#">Performances</a></li>
+            <li data-page="community.html"><a href="#">Community</a></li>
+            <li data-page="workshops.html"><a href="#">Workshops</a></li>
+            <li data-page="about.html"><a href="#">About</a></li>
+            <li data-page="contact.html"><a href="#">Contact</a></li>
+          </ul>
       </div>
+    </nav>
+
+    <div id="home" class="cover">
+      <!-- TODO:  this is a duplicate of the above navbar
+                  the reason for this is that if the navbar is
+                  not part of the cover element there is a weird
+                  gab between the cover and the nabar which looks horrible...
+                  I need to find a way to fix this without duplicating the code-->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#" id="brand" data-page="home">Home</a>
+          </div>
+          <!-- Nav tabs -->
+          <ul class="nav navbar-nav navbar-right">
+            <li data-page="performances.html"><a href="#">Performances</a></li>
+            <li data-page="community.html"><a href="#">Community</a></li>
+            <li data-page="workshops.html"><a href="#">Workshops</a></li>
+            <li data-page="about.html"><a href="#">About</a></li>
+            <li data-page="contact.html"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="background-image-fixed cover-image" style="background-image : url('img/cover_photo.jpg')"></div>
       <div class="container">
         <div class="row">
@@ -49,135 +59,38 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <a name="Candid"></a> 
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="text-primary">Candid</h1>
-            <h3>A performance Ritual</h3>
-            <!--<iframe src="https://player.vimeo.com/video/160273210" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-            <iframe width="500" height="281" src="https://www.youtube.com/embed/SbIZAw38y18" frameborder="0" allowfullscreen></iframe>
-            <p></p>
-            <p>Are you real or mythical? I re-imagine, admire and objectify you. I want to pull your hair out. Friend, poor friend. I want to ignore and humiliate you. Then, I want to take you by your hand and go out in the fields. Spend time with you, laugh and say silly things.</p>
 
-            <p>CANDID is an enigmatic ‘performance-ritual’ that celebrates long lasting friendships. A dangerous ‘truth or dare’ game that weaves the stories of two women. Together, they remember, deconstruct and reinvent themselves.</p>
-
-            <p>When they come face to face, each one is reflected in the eyes, body and words of the other by unveiling and blending memories from previous relationships that might be real, mythical or imaginary. Continuous comparisons, dark thoughts, conflicts, and fears surge and evolve as they grow and change. Through candid confrontations, the two friends uncover their need to be identical and yet different; to merge into each other and, at the same time, to be superior. Their mutual candour brings them face-to-face; and that is what keeps them connected. </p>
-
-            <p>Candid is a performance about female relationships that we experience, observe and imagine around us. Through abstract and everyday dialogue and physicality, it questions issues of competition among women, difference and commitment explored in a raw, confessional, confrontational and vulnerable manner. Vanio and Tania, the two friends, have committed to repeat this game at least once a year, giving to the performance the dimensions of a life-long ritual.</p>
-
-            <p>The piece has travelled and been adapted so far into black boxes, galleries, houses and a council chamber, every time changing its rules.</p> 
-
-            <p>GoLive platform, London - September 2014 and April 2015</p>
-            <p>Gobsmack platform (London Buddhist Arts Centre) - September 2014</p>
-            <p>Impfest (Hornsey Town Hall) - September 2015</p>
-            <p>Eilissos Theatre, Athens - April 2015</p>
-            <p>Andipa Gallery, London - May 2015</p>
-          </div>
-          <div class="col-md-6">
-            <p></p>
-            <p></p>
-            <img src="img/gonata.jpg" class="img-responsive">
-          </div>
-        </div>
-      </div>
-      <hr>
-    </div>
-    <div class="section">
-      <div class="container">
-
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <a name="Candid_Girlfriends"></a> 
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/girlfriends.jpg" class="img-responsive">
-          </div>
-          <div class="col-md-6">
-            <h1 class="text-primary">Candid Girlfriends</h1>
-            <p>Come and join us on International Women’s Day, Tuesday the 8th of March, to explore friendships with women. We invite you at the Redmond Community Centre to share your memories and stories about female friends through words, hugs, songs, amulets and other creative activities to choose from!
-            Together, we will celebrate women of the past, of myths and tales, women of next door, women of the future. Women who dare and women who share.
-            <p>We will offer tea, delicious biscuits and juicy fruits!</p>
-            <p>Drop in alone or with your friends and stay for as long as you like!</p>
-            <div id="links" class="links">
-                <a href="img/girlfriends_notebook.jpg" title="Our Notebook">
-                  <img src="img/girlfriends_notebook.jpg" height="75" width="75">
-                </a>
-                <a href="img/girlfriends_notebook_1.jpg" title="Writting">
-                  <img src="img/girlfriends_notebook_1.jpg" height="75" width="75">
-                </a>
-                <a href="img/girlfriends_knitting.jpg" title="Knitting">
-                  <img src="img/girlfriends_knitting.jpg" height="75" width="75">
-                </a>
-                <a href="img/girlfriends_knitting_hands.jpg" title="Knitting together">
-                  <img src="img/girlfriends_knitting_hands.jpg" height="75" width="75">
-                </a>
-                <a href="img/girlfriends_sweater.jpg" title="Knitting the name of a friend">
-                  <img src="img/girlfriends_sweater.jpg" height="75" width="75">
-                </a>
-                <a href="img/girlfriends_panoramic.jpg" title="All of us in the space">
-                  <img src="img/girlfriends_panoramic.jpg" height="75" width="75">
-                </a>
-                <a href="img/girlfriends_hand_massage.jpg" title="Offering hand massage">
-                  <img src="img/girlfriends_hand_massage.jpg" height="75" width="75">
-                </a>
-            </div>
-            <div id="blueimp-gallery" class="blueimp-gallery">
-                <div class="slides"></div>
-                <h3 class="title"></h3>
-                <a class="prev">‹</a>
-                <a class="next">›</a>
-                <a class="close">×</a>
-                <a class="play-pause"></a>
-                <ol class="indicator"></ol>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </div>
-    <div class="section">
-      <div class="container">
-        <a name="About_Us"></a> 
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="text-primary">About Us</h1>
-            <p>Vanio Papadelli and Tania Batzoglou are two Greek London-based female artists collaborating since 2012. Their work experiments within different mediums to create physically and emotionally intense performances through intimacy and provocation. It fuses everyday and abstract speech, intense physicality, site-sensitive use of the space, and video, resulting into an unusual mix of theatre, dance and live art.</p>
-
-            <p>Vanio Papadelli is a performer and maker in the fields of movement and physical theatre inspired by Eastern European Laboratory theatre, dance theatre, Contact Improvisation, release-based techniques, somatic movement, and improvisation. She has performed nationally and internationally in work by diverse theatre directors and choreographers including Theatre Lab, Angela Woodhouse, and the award-winning Song of the Goat Theatre. Her performances have travelled in Greece, Beirut, Egypt, and the UK. Vanio is a regular Visiting Lecturer on BA and MA level (Goldsmiths, Rose Bruford College, Middlesex University and LAMDA).</p>
-
-            <p>Tania Batzoglou is an actor, performance artist, storyteller and a drama and movement therapist. She also teaches on performance skills and dramatherapy in Higher Education across the MA courses at the Royal Central School of Speech and Drama, ArtsEd, and internationally at LISPA -Berlin, University of Belgrade, Hydrama through Ryarson University of Canada; and at the Summer School of Tallinn University, Estonia. In parallel, she works with young people and senior citizens commissioned by the V&amp;A Museum, Historical Royal Palaces, GLYPT and Discover.</p>
-
-            <p>They have both completed practice as research PhDs and they enjoy a heart-to-heart chat as much as an academic debate.</p>
-          </div>
-          <div class="col-md-6">
-            <img src="img/peponi.jpg" class="img-responsive">
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="panel-footer">
-      <a name="Contact"></a>
-      <h1 class="text-primary">Contact</h1>
-      <p>Vanio  <a href="mailto:vanyo_ka@yahoo.gr">vanyo_ka@yahoo.gr</a></p>
-      <p>Tania  <a href="mailto:t_batzoglou@hotmail.com">t_batzoglou@hotmail.com</a></p>
+    <div id="load_target" class="container">
     </div>
 
-
-    <script src="js/blueimp-gallery.min.js"></script>
     <script>
-    document.getElementById('links').onclick = function (event) {
-        event = event || window.event;
-        var target = event.target || event.srcElement,
-            link = target.src ? target.parentNode : target,
-            options = {index: link, event: event},
-            links = this.getElementsByTagName('a');
-        blueimp.Gallery(links, options);
-    };
+      function load_home() {
+        $("#home").show();
+        $("#load_target").hide();
+        $("#menu").hide();
+
+      } 
+
+      //initial landing page
+      $( document ).ready(function() {
+        load_home();
+      });
+
+      //set brand text/icon to take us back to the landing page
+      $("#brand").on("click", function() {
+        load_home();
+      });
+
+      //data-page property sets the page to load each time
+      $("ul.navbar-nav li").each( function() {
+            $(this).on("click", function() {
+                $("#menu").show();
+                $("#load_target").show();
+                $("#home").hide();
+                $("#load_target").load($(this).attr("data-page"));
+              });
+          });
     </script>
 
-</body></html>
+  </body>
+</html>

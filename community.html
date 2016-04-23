@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+
+<div class="row">
+  <div class="col-md-6">
+    <img src="img/girlfriends.jpg" class="img-responsive">
+  </div>
+  <div class="col-md-6">
+    <h1 class="text-primary">Candid Girlfriends</h1>
+    <p>Come and join us on International Women’s Day, Tuesday the 8th of March, to explore friendships with women. We invite you at the Redmond Community Centre to share your memories and stories about female friends through words, hugs, songs, amulets and other creative activities to choose from!
+    Together, we will celebrate women of the past, of myths and tales, women of next door, women of the future. Women who dare and women who share.
+    <p>We will offer tea, delicious biscuits and juicy fruits!</p>
+    <p>Drop in alone or with your friends and stay for as long as you like!</p>
+    <div id="links" class="links">
+        <a href="img/girlfriends_notebook.jpg" title="Our Notebook">
+          <img src="img/girlfriends_notebook.jpg" height="75" width="75">
+        </a>
+        <a href="img/girlfriends_notebook_1.jpg" title="Writting">
+          <img src="img/girlfriends_notebook_1.jpg" height="75" width="75">
+        </a>
+        <a href="img/girlfriends_knitting.jpg" title="Knitting">
+          <img src="img/girlfriends_knitting.jpg" height="75" width="75">
+        </a>
+        <a href="img/girlfriends_knitting_hands.jpg" title="Knitting together">
+          <img src="img/girlfriends_knitting_hands.jpg" height="75" width="75">
+        </a>
+        <a href="img/girlfriends_sweater.jpg" title="Knitting the name of a friend">
+          <img src="img/girlfriends_sweater.jpg" height="75" width="75">
+        </a>
+        <a href="img/girlfriends_panoramic.jpg" title="All of us in the space">
+          <img src="img/girlfriends_panoramic.jpg" height="75" width="75">
+        </a>
+        <a href="img/girlfriends_hand_massage.jpg" title="Offering hand massage">
+          <img src="img/girlfriends_hand_massage.jpg" height="75" width="75">
+        </a>
+    </div>
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+  </div>
+</div>
+
+<script src="js/blueimp-gallery.min.js"></script>
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+    
