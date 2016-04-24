@@ -9,17 +9,49 @@
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
     <link rel="stylesheet" type="text/css" href="css/cover.css">
 
+      <!-- If we need to change the font everywhere...
+      body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+      }
+      -->
+
     <style>
+
       .container.padded {
-        padding-top: 6%;
+        padding-top:    2%;
         padding-bottom: 6%
+      }
+
+      .page-header.coloured {
+        color:        #91492C;
+        font-family:  "Trebuchet MS", Helvetica, sans-serif;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+      }
+
+      .display-table {
+        display: table;
+        table-layout: fixed;
+      }
+
+      .display-cell {
+        display: table-cell;
+        vertical-align: middle;
+        float: none;
+      }
+
+      .display-cell.right {
+        text-align: right;
       }
     </style>
   </head>
   <body>
 
   <div class="container">
-    <nav id="menu" class="navbar navbar-default">
+    <nav id="menu" class="navbar navbar-default navbar-static-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#" id="brand" data-page="home">Home</a>
@@ -29,7 +61,15 @@
             <li data-page="performances.html"><a href="#">Performances</a></li>
             <li data-page="community.html"><a href="#">Community</a></li>
             <li data-page="workshops.html"><a href="#">Workshops</a></li>
-            <li data-page="about.html"><a href="#">About</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li data-page="concept.html"><a href="#">Concept</a></li>
+                <li data-page="biographies.html"><a href="#">Biographies</a></li>
+              </ul>
+            </li>
             <li data-page="contact.html"><a href="#">Contact</a></li>
           </ul>
       </div>
@@ -43,7 +83,7 @@
                   not part of the cover element there is a weird
                   gab between the cover and the nabar which looks horrible...
                   I need to find a way to fix this without duplicating the code-->
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-static-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#" id="brand" data-page="home">Home</a>
@@ -53,7 +93,15 @@
             <li data-page="performances.html"><a href="#">Performances</a></li>
             <li data-page="community.html"><a href="#">Community</a></li>
             <li data-page="workshops.html"><a href="#">Workshops</a></li>
-            <li data-page="about.html"><a href="#">About</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li data-page="concept.html"><a href="#">Concept</a></li>
+                <li data-page="biographies.html"><a href="#">Biographies</a></li>
+              </ul>
+            </li>
             <li data-page="contact.html"><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -95,10 +143,12 @@
       //data-page property sets the page to load each time
       $("ul.navbar-nav li").each( function() {
             $(this).on("click", function() {
+                var pageToLoad = $(this).attr("data-page");
+                if (typeof pageToLoad == 'undefined') return;
                 $("#menu").show();
                 $("#load_target").show();
                 $("#home").hide();
-                $("#load_target").load($(this).attr("data-page"));
+                $("#load_target").load(pageToLoad);
               });
           });
     </script>
